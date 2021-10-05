@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\shippingController::class,'index']);
 Route::get('provinces', [\App\Http\Controllers\shippingController::class,'provinces']);
+Route::get('city', [\App\Http\Controllers\shippingController::class,'city'])->name('get-city');
+Route::get('costs', [\App\Http\Controllers\shippingController::class,'costs'])->name('get-costs');
